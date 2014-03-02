@@ -12,6 +12,7 @@ Scenarios
 
 3. First class functions
   - Higher order functions
+  - Matching and wild card pottern
   
 
 
