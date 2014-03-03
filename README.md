@@ -7,10 +7,13 @@ Scenarios
 1. Strongly typed
   - Http request
 
-2. List operators
+2. Lazy evaluation 
+
+
+3. List operators
   - map/flatMap more fun list operators
 
-3. First class functions
+4. First class functions
   - Higher order functions
   - Matching and wild card pottern
   
