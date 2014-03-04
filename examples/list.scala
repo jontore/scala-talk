@@ -7,6 +7,7 @@ object ListDemo {
     }
   }
 
+  //Shows complier error if Some is not handled
   def higherThanThreshold(t: Int, xs: List[Int]): Int = {
     val found = xs find (_ > t)
     found match {
