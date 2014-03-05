@@ -7,17 +7,9 @@ object ListDemo {
     }
   }
 
-  //Shows complier error if Some is not handled
-  def higherThanThreshold(t: Int, xs: List[Int]): Int = {
-    val found = xs find (_ > t)
-    found match {
-      case Some(f) => f
-      case None => 0
-    }
-  }
-
   def multiplyList(xs: List[Int]): Int = {
-    (1 /: xs) (_ * _)
+    // (1 /: xs) (_ * _)
+    xs.foldRight(1) (_ * _)
   }
 
 }
@@ -32,3 +24,7 @@ println(ListDemo.higherThanThreshold(5, List(2, 1, 2, 4, 10, 5, 7, 2)))
 
 //Should
 println(ListDemo.multiplyList(List.range(1, 5)))
+
+val a = (123, 'a')
+
+val (aInt, aString) = a

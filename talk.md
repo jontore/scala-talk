@@ -21,7 +21,6 @@ Functional Programming
     square(square(3)) # 3 * 3 * 3
   ```
 
-
   ```Objective-C
 
   ```
@@ -90,26 +89,70 @@ Remember this
   //add2: Int => Int = <function1>
 ```
 
+
 List operations
 ----------------
+map, flatMap, foldRight (/:), filter, find
+```javascript
+  var l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10];
+  l.map(function (x) {
+    return x + 2;
+  });
+  //The rest is painfull. But luckily there is libraries :D
+```
 
+```ruby
+  l = (1..10).to_a
+  l.map { |x| x + 2 }
+  l.find_all { |x| x > 4 }
+  l.reduce { |x, memo| x + memo }
+```
+
+```scala
+  val l = List.range(1, 10)
+  l.map(x => x + 2)
+  l.filter(x => x > 4)
+  l.reduce(memo, x => memo + x)
+```
 
 Option (It's actually a monad!)
 --------------------------------
+
 ```ruby
+  name = request.name
+  println(name)
+```
+
+``` javascript
+  var name = request.getParameter('name');
+  console.log(name);
+```
+
+Strongly typed
+
+```scala
+  val name = request getParameter "name"
+  println(name)
 ```
 
 ```scala
   val nameMaybe = request getParameter "name"
   nameMaybe match {
     case Some(name) =>
-      println(name.trim.toUpperCase)
+      println(name)
+  }
+```
+
+```scala
+  val nameMaybe = request getParameter "name"
+  nameMaybe match {
+    case Some(name) =>
+      println(name)
     case None =>
       println("Oh no name")
   }
   //Resource scala-lang option monad
 ```
-
 
 Pattern matching
 ----------------
