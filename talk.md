@@ -104,7 +104,7 @@ map, flatMap, foldRight (/:), filter, find
   l.reduce(function (memo, x) {
     return memo + x;
   });
-
+  //es5
 ```
 
 ```ruby
