@@ -98,7 +98,13 @@ map, flatMap, foldRight (/:), filter, find
   l.map(function (x) {
     return x + 2;
   });
-  //The rest is painfull. But luckily there is libraries :D
+  l.filter(function (x) {
+    return x > 4;
+  });
+  l.reduce(function (memo, x) {
+    return memo + x;
+  });
+
 ```
 
 ```ruby
