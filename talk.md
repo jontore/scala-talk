@@ -78,6 +78,14 @@ Live coding :/ (Oh noes)
   println(add2(4))
 ```
 
+Immutable data structures
+-------------------------
+In functional programming there is no mutable variable.
+Can also transform a -> b
+Mutable variable are for iterable programming.
+By default in scala you're using imutable data structures.
+Scala encourages and makes it easy to create and use immutables.
+
 Type Inference
 ______________
 
@@ -121,6 +129,29 @@ map, flatMap, foldRight (/:), filter, find
   l.reduce(memo, x => memo + x)
 ```
 
+Pattern matching
+----------------
+```javascript
+  function length(list) {
+    switch(list.length) {
+      case 0:
+        return 0;
+      default:
+        return 1 + length(list.slice(0));
+    }
+  }
+```
+
+```scala
+  def length(a: List[Int]):Int = a match {
+    case Nil => 0
+    case h::t => 1 + length(t)
+  }
+```
+
+Compiler warns when there is missing, types, can also match on operations, classes, function.
+So if you want to create a programming language this is very cool!
+
 Option (It's actually a monad!)
 --------------------------------
 
@@ -160,7 +191,75 @@ Strongly typed
   //Resource scala-lang option monad
 ```
 
-Pattern matching
-----------------
+Higher order function
+----------------------
+In scala functions is first class citizens, they are also variables.
+A typical example of this pattern is higher order functions.
+
+```scala
+  def awesomePrinter(x) =
+    println("awesome magic", x)
+
+  def myMagicListIterator(f: Int=>Unit, xs:List[Int]) =
+    xs.foreach(x => f(x))
+
+  //myMagicListIterator(awesomePrinter, List.Range(0, 10)
+```
+
+//This is painful in ruby and in javascript we don not have strongly type. Which can make this a bit error prone. (Typically a lot of type checking)
+
+Pure functions
+--------------
+If an expression can be replaced by its value without changing the behaviour of the program, it is said to be referentially transparent.
+
+```scala
+  (1 + 3) //can be replaced by 4
+```
+
+```javascript
+  var a;
+  setA(b) {
+    a = b; //even worse with conditions
+  }
+```
+
+A pure function will always give the same output given the same input.
+In math very simple:
+
+```javascript
+  Math.sin(0) // 0
+```
+No side effects
+
+So we have immutable data and pure functions. What defines functional programming?
+A whole program composed by pure functions and immutable data structures. And this becomes extremly powerful when dealing with concurrency.
+
+Is it useful??
+--------------
+
+Yes and No..
+How practical and what's the benefits?
+
+Scala is bit pragmatic, compared to PURE languages such as Haskell.
+
+The idea is to write pure functional core surronded by a few impure functions.
+
+
+```scala
+  \\Some class with state and pure functions...
+
+```
+
+Q and A?
+-------
+
+
+Eco system
+----------
+
+
+Why is scalable
+---------------
+Actors
 
 
