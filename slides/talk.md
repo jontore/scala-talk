@@ -100,6 +100,7 @@ Note:
 ## Functional programming in Scala:
 <br>
 ```scala
+  //scala
   def square(number:Int):Int = number * number
 
   square(square(3)) // 3 * 3 * 3
@@ -118,6 +119,7 @@ Note:
 
 
 ```scala
+  //scala
   val a = 2 //Scala encourages the use of immutable data
   var b = 5
   a += 2
@@ -156,6 +158,7 @@ Scala detects your type, most of the time ;)
 
 Simple example:
 ```scala
+  //scala
   val a = 2
   //a: Int
 ```
@@ -172,6 +175,7 @@ Note:
 Find a sum of an array
 
 ```javascript
+  //js
   var arr = [1, 2, 3, 4];
   var i;
   var sum = 0;
@@ -187,6 +191,7 @@ Find a sum of an array
 ## Recursion!
 
 ```javascript
+  //js
   function sumList(sum, arr) {
     if (arr.length === 0) {
       return sum;
@@ -208,6 +213,7 @@ Find a sum of an array
 ### Iterators to the rescue!
 
 ```javascript
+  //js
   var l = [1, 2, 3 , 4];
   l.reduce(function (memo, x) {
     return memo + x;
@@ -258,7 +264,10 @@ scala:
 
 ## Pattern matching
 
+
+
 ```javascript
+  //js
   function length(list) {
     switch(list.length) {
       case 0:
@@ -270,6 +279,7 @@ scala:
 ```
 
 ```scala
+  //scala
   def length(a: List[Int]):Int = a match {
     case Nil => 0
     case h::t => 1 + length(t)
@@ -298,12 +308,14 @@ Suppose, we're trying to fetch some data...
 
 in ruby:
 ```ruby
+  #ruby
   name = request.name
   println(name)
 ```
 
 and in js:
 ``` javascript
+  //js
   var name = request.getParameter('name');
   console.log(name);
 ```
@@ -318,6 +330,7 @@ Note:
 Let's try to do the same in scala:
 
 ```scala
+  //scala
   val name = request getParameter "name"
   println(name)
 ```
@@ -335,6 +348,7 @@ Option wraps the response that might happend so it's safe.
 Ok, let's try to do better:
 
 ```scala
+  //scala
   val nameMaybe = request getParameter "name"
   nameMaybe match {
     case Some(name) =>
@@ -349,6 +363,7 @@ Note:
 
 Complete example:
 ```scala
+  //scala
   val nameMaybe = request getParameter "name"
   nameMaybe match {
     case Some(name) =>
@@ -372,6 +387,7 @@ In scala functions are first class citizens, they are also variables.
 Higher order functions are functions, where you send in functions as arguments.
 
 ```scala
+  //scala
   def awesomePrinter(x) =
     println("awesome magic", x)
 
@@ -398,12 +414,14 @@ it is said to be referentially transparent.
 <br>
 
 pure function:
-```scala
+```javascript
+  //js
   (1 + 3) //can be replaced by 4
 ```
 
 impure function:
 ```javascript
+  //js
   var a;
   setA(b) {
     a = b; //even worse with conditions
@@ -414,6 +432,7 @@ impure function:
 A pure function will always give the same output given the same input.
 
 ```javascript
+  //js
   Math.sin(0) // 0
 ```
 
@@ -456,6 +475,7 @@ Scala is bit pragmatic, compared to "PURE" languages such as Haskell.
 The idea is to write pure functional core surrounded by a few impure functions.
 
 ```scala
+  //scala
   class BankAccount {
     private var bal:Int = 0
 
@@ -477,5 +497,8 @@ The idea is to write pure functional core surrounded by a few impure functions.
 ```
 
 
-
 # Q and A?
+
+Note:
+  - How can we apply this in Babbel?
+  - Good for creating compliers. (babbel language)
