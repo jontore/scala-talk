@@ -497,6 +497,16 @@ The idea is to write pure functional core surrounded by a few impure functions.
 ```
 
 
+
+# References
+
+- This talk is highly inspired by: http://de.slideshare.net/pramode_ce/introduction-to-functional-programming-with-scala
+- Coursera functional programming course (scala): https://www.coursera.org/course/progfun (next session starts in April!)
+- Coursera reactive programming course: https://www.coursera.org/course/reactive
+- Twitter scala school: http://twitter.github.io/scala_school (Warning: extremely complicated)
+
+
+
 # Q and A?
 
 Note:
