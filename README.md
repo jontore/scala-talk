@@ -85,4 +85,6 @@ Resources
 - http://stackoverflow.com/questions/2284259/suggested-content-for-a-lunch-time-introduction-to-scala-talk
 - http://stackoverflow.com/questions/1722726/is-the-scala-2-8-collections-library-a-case-of-the-longest-suicide-note-in-hist?rq=1
 - http://twitter.github.io/scala_school
+- Fun talk on functional programming more on monads (http://vimeo.com/user18356272/review/66548720/99c7fe5c0c)
+- Monads in Haskell (http://learnyouahaskell.com/a-fistful-of-monads)
 
