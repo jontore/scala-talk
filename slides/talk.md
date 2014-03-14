@@ -48,7 +48,7 @@ Debunk a bit. It's nothing magical.
 
 Multi-paradigm (a bit like your mom, it can do it all)
 
-- functinoal
+- functional
 - object oriented
 - imperative
 - concurrent
@@ -62,9 +62,9 @@ Note:
 
 ## Why it has gotten some tracktion?
 
-- Scalabale and fault tolerant
+- Scalable and fault tolerant
 - Runs on the JVM, can interact with Java applications
-- Good tooling pretty early on, and developed eco-system
+- Good tooling pretty early on, and developed ecosystem
 
 
 ## Who uses it?
@@ -80,7 +80,7 @@ Not really popular in startups :(
 
 Note:
 - just to add some tracktion
-- people are migrationg because of scalability
+- people are migration because of scalability
 
 
 
@@ -89,8 +89,8 @@ Note:
 Basics of functional programming with examples in ruby, js and scala
 
 Note:
-- Try to explain functional programming using Scal, something you can apply in your language of choice
-- Scala supports Object Oriented paradigm aswell, and why it matters
+- Try to explain functional programming using Scala, something you can apply in your language of choice
+- Scala supports Object Oriented paradigm as well, and why it matters
 
 
 
@@ -341,7 +341,7 @@ Note:
 
 ## The option monad does the job
 
-Option wraps the response that might happend so it's safe.
+Option wraps the response that might happened so it's safe.
 
 <br>
 
@@ -405,10 +405,10 @@ Which can make this a bit error prone. (Typically a lot of type checking)
 
 ## Pure functions
 
-You actually already know this by now. It's simply a statless function.
+You actually already know this by now. It's simply a stateless function.
 
 
-> If an expression can be replaced by its value without changing the behaviour of the program,
+> If an expression can be replaced by its value without changing the behavior of the program,
 it is said to be referentially transparent.
 
 <br>
@@ -455,7 +455,7 @@ the behavior of program
 A whole program composed by pure functions and immutable data structures.
 
 Note:
-- And this becomes extremly powerful when dealing with concurrency.
+- And this becomes extremely powerful when dealing with concurrency.
 
 
 ## Is it useful??
