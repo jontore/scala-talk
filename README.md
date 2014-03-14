@@ -1,21 +1,9 @@
 scala-talk
 ==========
 
-Scenarios
-----------
-
-1. Strongly typed
-  - Http request
-
-2. Lazy evaluation 
-
-
-3. List operators
-  - map/flatMap more fun list operators
-
-4. First class functions
-  - Higher order functions
-  - Matching and wild card pottern
+Slides
+--------
+[Slide deck](http://jontore.github.io/scala-talk)
   
 
 
@@ -85,6 +73,6 @@ Resources
 - http://stackoverflow.com/questions/2284259/suggested-content-for-a-lunch-time-introduction-to-scala-talk
 - http://stackoverflow.com/questions/1722726/is-the-scala-2-8-collections-library-a-case-of-the-longest-suicide-note-in-hist?rq=1
 - http://twitter.github.io/scala_school
-- Fun talk on functional programming more on monads (http://vimeo.com/user18356272/review/66548720/99c7fe5c0c)
-- Monads in Haskell (http://learnyouahaskell.com/a-fistful-of-monads)
+- [Fun talk on functional programming, more on monads](http://vimeo.com/user18356272/review/66548720/99c7fe5c0c)
+- [Monads in Haskell](http://learnyouahaskell.com/a-fistful-of-monads)
 
