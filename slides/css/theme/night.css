@@ -13,6 +13,7 @@ body {
   background-color: #A8B6B6;
 }
 
+
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 33px;
@@ -49,7 +50,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #e7ad52;
+  color: #4D5050;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -58,7 +59,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #f3d7ac;
+  color: #FFF;
   text-shadow: none;
   border: none; }
 
