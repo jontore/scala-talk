@@ -481,16 +481,14 @@ The idea is to write pure functional core surrounded by a few impure functions.
 
     def deposit(amount: Int) = {
       bal += amount
-    }
+    } //Impure
 
-    // Pure
     def isItEnoughMoney(price: Int, amount: Int) = {
-      if price > amount ? false : true
-    }
+      price > amount
+    } //Pure
 
-    // Impure
     def doIhaveEnoughMoney(price: Int) = {
-      isItEnoughMoney(pric, bal)
+      isItEnoughMoney(price, bal)
     }
   }
 
