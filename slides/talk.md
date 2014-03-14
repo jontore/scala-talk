@@ -510,3 +510,4 @@ The idea is to write pure functional core surrounded by a few impure functions.
 Note:
   - How can we apply this in Babbel?
   - Good for creating compliers. (babbel language)
+  - Phillip wadler introduced monads in haskell
